@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Channel Uploader</title>
+<style>
+:root{--bg:#f7f7f5;--fg:#1d1f22;--muted:#5d636b;--line:#dcdcd6;--accent:#b4232a}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#ececea;--muted:#a3a7ad;--line:#33353a;--accent:#ff6b6b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#ececea;--muted:#a3a7ad;--line:#33353a;--accent:#ff6b6b;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;padding-block:40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:680px;margin:0 auto;display:grid;gap:28px}
+h1{font-size:2rem;margin:0;text-wrap:balance}
+h2{font-size:1.15rem;margin:0 0 6px;color:var(--accent)}
+p,li{margin:0}
+ul{margin:6px 0 0;padding-left:20px;display:grid;gap:4px}
+section{border-top:1px solid var(--line);padding-top:20px}
+.muted{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header id="about">
+<h1>Channel Uploader</h1>
+<p>Channel Uploader is a private, single-user tool that uploads and schedules videos to two YouTube channels owned by the same creator: <b>Buildiverse</b> (Valheim building) and <b>Seed Vista</b> (Minecraft seed showcases). It runs only on the owner's own computer. It is not offered to the public and has no other users.</p>
+</header>
+<section id="what">
+<h2>What it does</h2>
+<ul>
+<li>Uploads finished videos the owner produced to the owner's own channels.</li>
+<li>Sets the title, description, tags, chapters, thumbnail and scheduled publish time.</li>
+<li>Reads the owner's own channel information to confirm the right channel is selected.</li>
+</ul>
+</section>
+<section id="privacy">
+<h2>Privacy policy</h2>
+<p>Channel Uploader accesses YouTube data only through the YouTube API Services, and only for the channel owner's own account, with the owner's consent.</p>
+<ul>
+<li><b>Data accessed:</b> the owner's channel id and title, and the metadata of videos the owner uploads.</li>
+<li><b>Use:</b> only to upload and schedule the owner's videos. No data is sold, shared with third parties, or used for advertising.</li>
+<li><b>Storage:</b> OAuth tokens are stored only on the owner's computer, in Windows Credential Manager. No server or database receives them.</li>
+<li><b>Other people's data:</b> none is collected.</li>
+<li><b>Revoking access:</b> the owner can remove access at any time at <span>https://myaccount.google.com/permissions</span>, which deletes the tool's ability to act.</li>
+</ul>
+<p>Channel Uploader uses YouTube API Services. By using it you agree to the YouTube Terms of Service (https://www.youtube.com/t/terms) and the Google Privacy Policy (https://policies.google.com/privacy).</p>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Contact the channel owner through the "About" page of the Buildiverse or Seed Vista YouTube channel.</p>
+<p class="muted">Last updated 14 November 2026.</p>
+</section>
+</main>
+
+</body>
+</html>
