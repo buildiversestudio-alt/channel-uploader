@@ -15,11 +15,13 @@ h2{font-size:1.15rem;margin:0 0 6px;color:var(--accent)}
 p,li{margin:0}
 ul{margin:6px 0 0;padding-left:20px;display:grid;gap:4px}
 section{border-top:1px solid var(--line);padding-top:20px}
+a{color:var(--accent)}
 .muted{color:var(--muted);font-size:.9rem}
 </style>
 </head>
 <body>
 <main>
+<nav style="display:flex;gap:18px;flex-wrap:wrap;font-weight:600"><a href="#about">About</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Use</a></nav>
 <header id="about">
 <h1>Channel Uploader</h1>
 <p>Channel Uploader is a private, single-user tool that uploads and schedules videos to two YouTube channels owned by the same creator: <b>Buildiverse</b> (Valheim building) and <b>Seed Vista</b> (Minecraft seed showcases). It runs only on the owner's own computer. It is not offered to the public and has no other users.</p>
@@ -42,7 +44,17 @@ section{border-top:1px solid var(--line);padding-top:20px}
 <li><b>Other people's data:</b> none is collected.</li>
 <li><b>Revoking access:</b> the owner can remove access at any time at <span>https://myaccount.google.com/permissions</span>, which deletes the tool's ability to act.</li>
 </ul>
-<p>Channel Uploader uses YouTube API Services. By using it you agree to the YouTube Terms of Service (https://www.youtube.com/t/terms) and the Google Privacy Policy (https://policies.google.com/privacy).</p>
+<p>Channel Uploader uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p><b>Data deletion:</b> no YouTube data is kept by the tool beyond the OAuth token. Revoking access at https://myaccount.google.com/permissions and deleting the token from Windows Credential Manager removes everything. Tokens are refreshed at least every 30 days or deleted.</p>
+</section>
+<section id="terms">
+<h2>Terms of use</h2>
+<p>Channel Uploader is provided for the personal use of the channel owner only. It is not offered, sold or distributed to anyone else.</p>
+<ul>
+<li>It uses YouTube API Services; use is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+<li>Only videos the owner created and has the rights to are uploaded, and only to the owner's own channels.</li>
+<li>The owner may stop using the tool and revoke its access at any time at https://myaccount.google.com/permissions; locally stored tokens are then deleted from Windows Credential Manager.</li>
+</ul>
 </section>
 <section id="contact">
 <h2>Contact</h2>
